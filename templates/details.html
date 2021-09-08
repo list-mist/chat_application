@@ -73,6 +73,7 @@ nav{
     <div class="container">
 
         <h1>User details</h1>
+        
     </div>
     <br>
 <div class="container">
@@ -85,6 +86,8 @@ nav{
           <th scope="col">Email</th>
           <th scope="col">Last login</th>
           <th scope="col">Date joined</th>
+          <th scope="col">Status</th>
+          <th scope="col">Send a message</th>
           </tr>
       </thead>
       <tbody>
@@ -95,6 +98,8 @@ nav{
               <td>{{task.email}}</td>
               <td>{{task.last_login}}</td>
               <td>{{task.date_joined}}</td>
+              <td>{{val}}</td>
+              <td><a href="../chat/{{task.username}}">chat</a></td>
               </tr>
 
       </tbody>
